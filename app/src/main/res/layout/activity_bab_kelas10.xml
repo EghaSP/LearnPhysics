@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.eghasp.learnphysics.BabKelas10Activity"
+    android:orientation="vertical"
+    android:background="#e9e0d2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp">
+
+        <ImageView
+            android:id="@+id/img_besaran"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_besaran"
+            android:layout_marginRight="5dp"/>
+
+        <TextView
+            android:id="@+id/teks_besaran"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_besaran"
+            android:text="Besaran dan Pengukuran"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="casual"
+            android:textSize="20sp"
+            android:textColor="@color/colorAccent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_besaran"
+            android:layout_below="@+id/teks_besaran"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_mat_besaran"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Materi"
+                android:textColor="@android:color/white"
+                android:fontFamily="casual"
+                android:layout_margin="5dp"
+                android:background="@drawable/optionsubmit"/>
+            <Button
+                android:id="@+id/btn_lat_besaran"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Latihan Soal"
+                android:textColor="@android:color/white"
+                android:fontFamily="casual"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/optionsubmit"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_vektor"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_vektor"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="5dp"/>
+
+        <TextView
+            android:id="@+id/teks_vektor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_vektor"
+            android:text="Vektor"
+            android:textSize="20sp"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/colorAccent"
+            android:fontFamily="casual"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_vektor"
+            android:layout_below="@+id/teks_vektor"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_mat_vektor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Materi"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/optionsubmit"
+                android:fontFamily="casual"
+                android:textColor="@android:color/white"/>
+            <Button
+                android:id="@+id/btn_lat_vektor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Latihan Soal"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/optionsubmit"
+                android:fontFamily="casual"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_gl"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_gl"
+            android:layout_marginTop="200dp"
+            android:layout_marginRight="5dp"/>
+
+        <TextView
+            android:id="@+id/teks_gl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_gl"
+            android:text="Gerak Lurus"
+            android:layout_marginTop="200dp"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="casual"
+            android:textSize="20sp"
+            android:textColor="@color/colorAccent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_gl"
+            android:layout_below="@+id/teks_gl"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_mat_gl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Materi"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/optionsubmit"
+                android:fontFamily="casual"
+                android:textColor="@android:color/white"/>
+            <Button
+                android:id="@+id/btn_lat_gl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Latihan Soal"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/optionsubmit"
+                android:fontFamily="casual"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_gp"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_gp"
+            android:layout_marginTop="300dp"
+            android:layout_marginRight="5dp"/>
+
+        <TextView
+            android:id="@+id/teks_gp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_gp"
+            android:text="Gerak Parabola"
+            android:layout_marginTop="300dp"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="casual"
+            android:textSize="20sp"
+            android:textColor="@color/colorAccent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_gp"
+            android:layout_below="@+id/teks_gp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_mat_gp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Materi"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/optionsubmit"
+                android:fontFamily="casual"
+                android:textColor="@android:color/white"/>
+            <Button
+                android:id="@+id/btn_lat_gp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Latihan Soal"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/optionsubmit"
+                android:fontFamily="casual"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_dinamika"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_dinamika"
+            android:layout_marginTop="400dp"
+            android:layout_marginRight="5dp"/>
+
+        <TextView
+            android:id="@+id/teks_dinamika"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_dinamika"
+            android:text="Dinamika Gerak"
+            android:layout_marginTop="400dp"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="casual"
+            android:textSize="20sp"
+            android:textColor="@color/colorAccent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_dinamika"
+            android:layout_below="@+id/teks_dinamika"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_mat_dinamika"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Materi"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/optionsubmit"
+                android:fontFamily="casual"
+                android:textColor="@android:color/white"/>
+            <Button
+                android:id="@+id/btn_lat_dinamika"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Latihan Soal"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/optionsubmit"
+                android:fontFamily="casual"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_grav"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_grav"
+            android:layout_marginTop="500dp"
+            android:layout_marginRight="5dp"/>
+
+        <TextView
+            android:id="@+id/teks_grav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_grav"
+            android:text="Hukum Gravitasi Newton"
+            android:layout_marginTop="500dp"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="casual"
+            android:textSize="20sp"
+            android:textColor="@color/colorAccent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_grav"
+            android:layout_below="@+id/teks_grav"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_mat_grav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Materi"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/optionsubmit"
+                android:fontFamily="casual"
+                android:textColor="@android:color/white"/>
+            <Button
+                android:id="@+id/btn_lat_grav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Latihan Soal"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/optionsubmit"
+                android:fontFamily="casual"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_mo"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_momentum"
+            android:layout_marginTop="600dp"
+            android:layout_marginRight="5dp"/>
+
+        <TextView
+            android:id="@+id/teks_mo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_mo"
+            android:text="Momentum dan Impuls"
+            android:layout_marginTop="600dp"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="casual"
+            android:textSize="20sp"
+            android:textColor="@color/colorAccent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_mo"
+            android:layout_below="@+id/teks_mo"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_mat_mo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Materi"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/optionsubmit"
+                android:fontFamily="casual"
+                android:textColor="@android:color/white"/>
+            <Button
+                android:id="@+id/btn_lat_mo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Latihan Soal"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/optionsubmit"
+                android:fontFamily="casual"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_usaha"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_usaha"
+            android:layout_marginTop="700dp"
+            android:layout_marginRight="5dp"/>
+
+        <TextView
+            android:id="@+id/teks_usaha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_usaha"
+            android:text="Usaha dan Energi"
+            android:layout_marginTop="700dp"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="casual"
+            android:textSize="20sp"
+            android:textColor="@color/colorAccent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_usaha"
+            android:layout_below="@+id/teks_usaha"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_mat_usaha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Materi"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/optionsubmit"
+                android:fontFamily="casual"
+                android:textColor="@android:color/white"/>
+            <Button
+                android:id="@+id/btn_lat_usaha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Latihan Soal"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/optionsubmit"
+                android:fontFamily="casual"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_ghs"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_ghs"
+            android:layout_marginTop="800dp"
+            android:layout_marginRight="5dp"/>
+
+        <TextView
+            android:id="@+id/teks_ghs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_ghs"
+            android:text="Gerak Harmonik Sederhana"
+            android:layout_marginTop="800dp"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="casual"
+            android:textSize="20sp"
+            android:textColor="@color/colorAccent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_ghs"
+            android:layout_below="@+id/teks_ghs"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_mat_ghs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Materi"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/optionsubmit"
+                android:fontFamily="casual"
+                android:textColor="@android:color/white"/>
+            <Button
+                android:id="@+id/btn_lat_ghs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Latihan Soal"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/optionsubmit"
+                android:fontFamily="casual"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
